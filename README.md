@@ -8,26 +8,26 @@ Create a docker compose file which contains all the necessary components to crea
 <img width="512" height="500" alt="unnamed" src="https://github.com/user-attachments/assets/9cefa721-08b7-43b8-9ab8-c30acea28c5b" />
 
 
-<br>
+<br><br><br>
 
  So, this will setup the below:<br><br>
-1 Spark Master<br>
-2 Spark Workers<br>
-1 HDFS Namenode<br>
-1 HDFS Datanode<br>
-1 Jupyter Notebook (with PySpark preconfigured)<br>
+- 1 Spark Master<br>
+- 2 Spark Workers<br>
+- 1 HDFS Namenode<br>
+- 1 HDFS Datanode<br>
+- 1 Jupyter Notebook (with PySpark preconfigured)<br>
 
 Create a folder in the local system and place the docker compose file in the folder.<br>
- Launch the stack:<br>
-Open terminal in the folder.<br>
+Launch the stack:<br>
+1. Open terminal in the folder.<br>
 
 
-Run:<br><br>
-docker-compose up –build -d<br>
+2. Run:<br><br>
+docker-compose up –build -d <br>
 This will pull all the needed images and start the local Spark-Hadoop-Jupyter cluster.<br>
 Open Jupyter Notebook<br>
 Visit: http://localhost:8888<br>
-Copy the token from the terminal output if it asks for one.<br><br><br>
+   Copy the token from the terminal output if it asks for one.<br><br><br>
 ## Instructions to run the application<br><br>
 
 ***Step 1:*** Install Docker Ddesktop, if not installed. Open the Docker Desktop and click on run option on the selected container to spinup the environment.
@@ -40,14 +40,18 @@ Then, a shell is opened into the container, and the HDFS commands are used to up
 <img width="512" height="161" alt="unnamed" src="https://github.com/user-attachments/assets/88754990-b462-4035-b754-47c8bec3ea78" />
 <br><br>
 Commands used to upload the dataset to HDFS<br>
-Copy dataset to namenode container: <br>
-docker cp D:/local-databricks/data/Crime_Data_from_2020_to_22March2025.csv namenode:/crime.csv<br>
-Open a shell into the container:<br>
-docker exec -it namenode bash<br>
-Run HDFS commands to upload:<br>
-hdfs dfs -mkdir -p /user/data<br>
-hdfs dfs -put Crime_Data_from_2020_to_22March2025.csv /user/data/<br>
-hdfs dfs -ls /user/data<br><br>
+
+Copy dataset to namenode container: <br> 
+  _docker cp D:/local-databricks/data/Crime_Data_from_2020_to_22March2025.csv namenode:/crime.csv_<br>
+  
+Open a shell into the container:<br> 
+  _docker exec -it namenode bash_<br>
+  
+Run HDFS commands to upload:<br> 
+
+  _hdfs dfs -mkdir -p /user/data_<br>
+  _hdfs dfs -put Crime_Data_from_2020_to_22March2025.csv /user/data/_<br>
+  _hdfs dfs -ls /user/data_<br><br>
 
 ***Step 3:*** The Jupyter notebook is opened by accessing http://localhost:8888 in any web browser.
 <img width="512" height="290" alt="unnamed (1)" src="https://github.com/user-attachments/assets/9462ea8c-9ab6-4cc8-b135-c57bebdd0d66" />
