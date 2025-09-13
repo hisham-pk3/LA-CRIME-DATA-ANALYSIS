@@ -52,11 +52,14 @@ The project provides insights into Los Angeles crime data through:
 ---
 
 ## 📈 Sample Visualizations  
-The notebook generates interactive and static plots for:  
-- Heatmaps of crime hotspots across LA  
-- Line plots for temporal trends (daily, weekly, monthly)  
-- Demographic breakdowns of victims  
-- Event-based comparative charts  
+The notebook generates a variety of static and interactive plots to highlight different aspects of crime trends, including:  
+
+- **Line plots** → Temporal trends (daily, weekly, monthly).  
+- **Bar charts** → Crime counts by type, demographics, and areas.  
+- **Pie charts** → Proportional breakdowns of crime categories or victim attributes.  
+- **Heatmaps** → Identifying hotspots across LA neighborhoods.  
+- **Geospatial plots** → Mapping crime intensity across different regions.  
+- **Comparative charts** → Event-based analysis before, during, and after major events.    
 
 ---
 
