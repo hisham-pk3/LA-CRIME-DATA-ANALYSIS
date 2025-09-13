@@ -1,9 +1,20 @@
 # LA Crime Data Analysis  
 
 ## 📌 Project Overview  
-The **LA Crime Data Analysis** project focuses on designing and implementing a scalable data analysis pipeline to study crime trends in Los Angeles from **2020 onwards**. With the COVID-19 pandemic, nationwide protests, and U.S. elections shaping societal dynamics during this period, the project explores whether such major events influenced crime patterns.  
+The **LA Crime Data Analysis** project was developed to design and implement a comprehensive pipeline for analyzing large-scale crime datasets using distributed computing technologies. Crime is a major challenge in urban environments, and in a city as vast and diverse as Los Angeles, uncovering historical patterns and trends provides valuable insights for understanding public safety dynamics.  
 
-Built using **Apache Spark** and **Hadoop Distributed File System (HDFS)**, the project efficiently processes large-scale datasets to extract **temporal, spatial, demographic, and event-driven insights**. The findings are presented through interactive **visualizations** in Jupyter Notebook, making the analysis both technical and actionable.  
+This project focuses on crime data from **2020 onward**, a period that not only reflects long-term urban crime patterns but also coincides with significant social, economic, and political shifts such as the COVID-19 pandemic, nationwide protests, and the U.S. presidential elections.  
+
+At its core, the project leverages **Apache Spark (PySpark)** and the **Hadoop Distributed File System (HDFS)** to support scalable data storage and processing. Spark was chosen for its ability to efficiently handle large datasets, perform distributed transformations, and provide compatibility for downstream analytics. A strong emphasis was placed on **data cleaning**, ensuring data quality by resolving missing values, correcting invalid entries, standardizing formats, and removing non-essential fields.  
+
+The analysis explores multiple dimensions:  
+- **Temporal trends** → crime variations across times of day, days of the week, and months.  
+- **Spatial distribution** → identifying patterns across neighborhoods and geographic areas.  
+- **Demographics** → studying how factors such as victim age, gender, and ethnicity relate to different crime types.  
+- **Event-based insights** → examining whether major real-world events had measurable effects on crime trends.  
+
+The results are communicated through **visualizations** created with **Matplotlib, Seaborn, and Plotly**, all presented in an interactive **Jupyter Notebook** environment. Beyond technical execution, the ultimate goal of this project is to deliver **actionable insights** that can inform research, policy, and urban safety strategies.  
+ 
 
 ---
 
