@@ -1,3 +1,68 @@
+# LA Crime Data Analysis  
+
+## 📌 Project Overview  
+The **LA Crime Data Analysis** project focuses on designing and implementing a scalable data analysis pipeline to study crime trends in Los Angeles from **2020 onwards**. With the COVID-19 pandemic, nationwide protests, and U.S. elections shaping societal dynamics during this period, the project explores whether such major events influenced crime patterns.  
+
+Built using **Apache Spark** and **Hadoop Distributed File System (HDFS)**, the project efficiently processes large-scale datasets to extract **temporal, spatial, demographic, and event-driven insights**. The findings are presented through interactive **visualizations** in Jupyter Notebook, making the analysis both technical and actionable.  
+
+---
+
+## 🎯 Goals of the Project  
+- **Scalable Data Handling** → Use **HDFS** for distributed storage and **Apache Spark (PySpark)** for large-scale data processing.  
+- **Data Cleaning & Preprocessing** → Handle missing values, invalid entries, standardize formats, and drop non-essential columns.  
+- **Pattern & Trend Extraction** → Analyze temporal, spatial, and demographic variations in crime.  
+- **Event-Based Analysis** → Study crime trends around **COVID-19 waves**, **George Floyd protests**, and the **U.S. elections**.  
+- **Visualization & Insights** → Present findings using **Matplotlib, Seaborn, and Plotly** for clarity and interpretability.  
+
+---
+
+## 📊 What the Project Does  
+The project provides insights into Los Angeles crime data through:  
+
+- **Temporal Trends** → Crime variations across times of day, days of the week, and months.  
+- **Crime Type Distribution** → Frequency and proportion of different crime categories.  
+- **Victim Demographics** → Age, gender, and ethnicity distribution across crime types.  
+- **Area-Wise Distribution** → Hotspot detection and neighborhood-based crime patterns.  
+- **Impact of Major Events** → Measuring crime trends during COVID-19, protests, and elections.  
+- **Geospatial Analysis** → Mapping crime intensity across different LA regions.  
+
+---
+
+## ⚙️ Technology Stack  
+
+- **Operating System**: Windows  
+- **Distributed Storage**: Hadoop Distributed File System (HDFS)  
+- **Data Processing**: Apache Spark (PySpark)  
+- **Containerization**: Docker  
+- **Programming Language**: Python  
+  - Libraries: PySpark, Pandas, Matplotlib, Seaborn, Plotly  
+- **Development Environment**: Jupyter Notebook  
+
+---
+
+## 📈 Sample Visualizations  
+The notebook generates interactive and static plots for:  
+- Heatmaps of crime hotspots across LA  
+- Line plots for temporal trends (daily, weekly, monthly)  
+- Demographic breakdowns of victims  
+- Event-based comparative charts  
+
+---
+
+## 📌 Future Improvements  
+- Integrating **real-time streaming crime data** using Spark Streaming.  
+- Building an **interactive dashboard** (e.g., Dash or Streamlit) for stakeholders.  
+- Expanding analysis to compare **pre-2020 vs. post-2020 trends**.  
+
+---
+
+## 📝 License  
+This project is for **educational and research purposes only**.  
+
+
+
+
+
 ## Deployment Instructions
 
 Install Docker Desktop to build the image and create the container which contains HDFS, PySpark and Jupyter notebook setup.
